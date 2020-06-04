@@ -1,24 +1,17 @@
 # README
+* Ruby version:2.6.6  
+# CSVインポートをRakeタスクで行いました。　　
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### ・```rails c```でコンソールを立ち上げずにCSVのインポートができるように実装。  　
 
-Things you may want to cover:
+### ・インポート中にエラーが発生した場合、それを知らせる機能も実装。　　
 
-* Ruby version
+### (作動方法)  
+コマンドで作動させるディレクトリに移動した後、　　
 
-* System dependencies
+```rake import_csv:users```　　
 
-* Configuration
+上記のrakeを作動させることでCSVデータをインポート。　　
 
-* Database creation
+その後```User.all```とするとインポートされたデータを確認可能。　　
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
